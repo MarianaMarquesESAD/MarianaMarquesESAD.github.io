@@ -4,21 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello, World!</title>
+  <title>About me</title>
 </head>
   
-<body>
-  <header>
-  <h1>Mariana</h1>
-   </header>
-   <nav>
-     <a href="about.html" target="_self">Work</a>
-     <a href="work.html" target="_self">Work</a>
-     <a href="contacts.html" target="_self">Work</a>
-   </nav>
- 
+<style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+      overflow: hidden;
+    }
   
-  <p>texto, isto é um texto</p>
-</body>
+    li {
+      float: left;
+    }
   
-</html>
+    li a {
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+  
+    li a:hover {
+      background-color: #ddd;
+    }
+  </style>
+  </head>
+  <body>
+  
+  <ul>
+    <li><a href="index.html">Página Inicial</a></li>
+    <li><a href="about.html">Sobre Mim</a></li>
+    <li><a href="work.html">Trabalhos</a></li>
+    <li><a href="contacts.html">Contatos</a></li>
+  </ul>
