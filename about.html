@@ -3,15 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu de Navegação</title>
+  <title>About</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <nav>
-    <div class="menu-item"><a href="index.html">Início</a></div>
-    <div class="menu-item"><a href="work.html">Trabalho</a></div>
-    <div class="menu-item"><a href="about.html">Sobre mim</a></div>
-    <div class="menu-item"><a href="contacts.html">Contatos</a></div>
+    <div class="menu-item"><a href="index.html">Work</a></div>
+    <div class="menu-item"><a href="work.html">Services</a></div>
+    <div class="menu-item"><a href="about.html">About</a></div>
+    <div class="menu-item"><a href="contacts.html">Contacts</a></div>
   </nav>
-</body>
+  <h1>I'm Mariana, a UX designer based in Caldas da Rainha.</h1>
+  <p>Olá, sou a Mariana, uma UX designer sediada nas Caldas da Rainha com uma paixão por criar experiências de utilizador perfeitas e agradáveis. Tenho 21 anos e sou originalmente de Mira de Aire. Gosto especialmente de trabalhar em operações de design e sistemas que ajudam a pôr ordem na complexidade.
+    <br>Quando não estou a desenhar, podem encontrar-me a desfrutar do Parque D.Carlos ou a jogar jogos como League of Legends. 
+    Gosto bastante de ler mas tenho um pouco de défice de atenção.
+    Obrigado por visitar o meu portefólio!</p>
+      <button onclick="toggleImagens()">Show Fun Facts</button>
+    
+    <div class="containercuriosidade" id="containercuriosidade" style="display:none;">
+
+      <img class="curiosidade" src="caminho_para_sua_imagem1.jpg" alt="curiosidade 1">
+      <img class="curiosidade" src="caminho_para_sua_imagem2.jpg" alt="curiosidade 2">
+      <img class="curiosidade" src="caminho_para_sua_imagem3.jpg" alt="curiosidade 3">
+    </div>
+
+<script>
+// Função para alternar a visibilidade das imagens
+function toggleImagens() {
+  // Seleciona todas as imagens na página
+  var imagens = document.querySelectorAll(".curiosidade");
+
+  // Loop para alternar a visibilidade de cada imagem
+  imagens.forEach(function(imagem) {
+    if (imagem.style.display === "none") {
+      imagem.style.display = "block";
+    } else {
+      imagem.style.display = "none";
+    }
+  });
+}
+</script>
+    
+    </body>
+    </html>
+    
+  </body>
 </html>
