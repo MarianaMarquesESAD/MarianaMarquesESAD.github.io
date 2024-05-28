@@ -24,17 +24,13 @@ nav {
   background-color: #fdffe187;
 }
 
-.container {
-	padding: 2rem;
-}
+/* botao de scroll para cima */
 
-/* Estilos para o botao de scroll para cima */
-
-#scrollUpButton {
+.scrollUpButton {
     display: none; 
     position: fixed 
     bottom 20px;  
-	right: 20px;
+	  right: auto;
     z-index: 99; 
     border: none; 
     outline: none; 
@@ -46,7 +42,7 @@ nav {
 
 }
 
-#scrollUpButton:hover {
+.scrollUpButton:hover {
     background-color: #333;
 }
   
@@ -61,7 +57,7 @@ nav {
 	height: 100vh;
   }
   
-  #portfolio p {
+  .portfolio p {
 	font-family: 'League Spartan', serif;
 	font-size: 15pt;
   }
@@ -72,18 +68,42 @@ nav {
 	height: 300px;
 	width: 200px;
   }
-  
   #port img:hover {
-	opacity: 1;
-	box-shadow: 0px 10px 50px #070708;
-	transition: opacity 0.5s, box-shadow 0.5s;
-	height: 300px;
-	width: 200px;
-  }
+    opacity: 1;
+    box-shadow: 0px 10px 50px #070708;
+    transition: opacity 0.5s, box-shadow 0.5s;
+    height: 300px;
+    width: 200px;
+    }
 
   /* Quando o rato passa por cima dos links muda a cor */
 
 .overlay a:hover,
 .overlay a:focus {
   color: #f1f1f1;
+}
+
+p {
+  margin-top: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+/* Para manter os elementos flutuantes */
+.container {
+  overflow: auto; 
+  padding: 2rem;
+  margin-right: 300px;
+}
+
+/* Ajuste o tamanho da imagem conforme necessário */
+.imagem-flutuante {
+  float: left;
+  margin-right: 30px;
+  margin-left: 300px;
+  max-width: 900px; 
+}
+/* Para garantir que o texto se ajuste corretamente ao lado da imagem */
+#container p {
+  overflow: hidden; 
+  margin-right: 300px
 }
