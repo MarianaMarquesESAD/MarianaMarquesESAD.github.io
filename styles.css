@@ -107,3 +107,53 @@ p {
   overflow: hidden; 
   margin-right: 300px
 }
+
+/*lista*/
+ol 
+{
+  font-size: 13pt;
+  margin-left: 45px;
+  list-style-type: decimal-leading-zero;
+}
+
+li 
+{
+  margin-bottom: 0.6em;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between; 
+  gap: 10px; 
+}
+.flex-container img {
+  max-width: 18%; 
+  height: 18%;
+}
+
+.flex-container2 {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 20px; 
+}
+
+.flex-container2 img {
+  max-width: 50%; 
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  height: auto; 
+}
+.flex-container2 .poster {
+  width: 50%; 
+}
+.flex-container2 .gif {
+  width: 50%; 
+}
