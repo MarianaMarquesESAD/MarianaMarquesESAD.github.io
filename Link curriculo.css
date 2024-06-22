@@ -158,10 +158,6 @@ object-fit: cover;
   margin-bottom: 50px;
 }
 
-.about:last-child{
-  margin-bottom: 0;
-}
-
 .title2{
   color: #000000;
   text-transform: uppercase;
